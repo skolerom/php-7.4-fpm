@@ -1,0 +1,8 @@
+.git
+.gitignore
+.dockerignore
+.env
+.env.example
+Makefile
+README.md
+*.md
