@@ -110,8 +110,8 @@ RUN php --version && \
     composer --version --no-interaction
 
 # Copy configuration files
-COPY opcache.ini /usr/local/etc/php/conf.d/opcache.ini
-COPY wait-for-it.sh /usr/local/bin/wait-for-it.sh
+COPY config/php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY scripts/wait-for-it.sh /usr/local/bin/wait-for-it.sh
 
 # Set permissions for scripts
 RUN chmod +x /usr/local/bin/wait-for-it.sh
